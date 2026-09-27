@@ -1,45 +1,42 @@
-# 📝 Daily Tasks App (JavaScript / Vanilla Next.js)
+# 🚀 Habit Tracker (Next.js App Router)
 
-Uma aplicação web minimalista e de uso imediato para o planeamento e gerenciamento de tarefas diárias, construída utilizando **somente recursos nativos do Next.js** e JavaScript puro (JSX).
-
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+Um aplicativo web **full-stack minimalista** para rastreamento e gerenciamento de metas diárias, desenvolvido com **Next.js**. O projeto explora recursos modernos do framework como Rotas de API, manipulação de arquivos locais e componentes interativos.
 
 ---
 
-## 🚀 Funcionalidades
+## 📋 Funcionalidades
 
-* **Adição Rápida:** Insira novas tarefas de forma ágil para organizar o seu dia.
-* **Controle de Status:** Marque tarefas como concluídas ou pendentes através de elementos visuais integrados.
-* **Resumo de Progresso:** Acompanhe em tempo real o total de tarefas criadas e quantas já foram finalizadas.
-* **Exclusão de Itens:** Remova facilmente tarefas que já não são necessárias.
-* **Persistência de Dados:** Os dados inseridos são salvos automaticamente no `localStorage` do navegador, garantindo que as anotações não se percam ao atualizar a página.
-* **Design Responsivo:** Interface limpa e estilizada utilizando exclusivamente CSS Modules locais.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-Este projeto foi desenvolvido sem a necessidade de bibliotecas externas de estilização, ícones ou tipagem estática:
-
-* **[Next.js](https://next.js.org/)** (App Router)
-* **[React](https://react.dev/)** (Hooks: `useState`, `useEffect`)
-* **JavaScript (JSX)**
-* **CSS Modules** (`app/page.module.css`)[cite: 1]
+- **Cadastro de Hábitos:** Adicione novos hábitos informando o nome e selecionando uma categoria (*Geral, Estudos, Saúde, Trabalho*).
+- **Matriz de Acompanhamento:** Visualize e marque o progresso dos últimos 7 dias em uma interface limpa e responsiva.
+- **Persistência no Servidor:** Os dados são salvos automaticamente em um arquivo JSON local (`data/habits.json`) através de rotas de API nativas.
+- **Painel de Estatísticas:** Acompanhe métricas gerais, como o total de hábitos e o volume de conclusões registradas.
+- **Gerenciamento Completo:** Opção de excluir hábitos individualmente de forma dinâmica.
 
 ---
 
-## 📦 Como Executar o Projeto
+## 🛠️ Tecnologias e Recursos do Next.js Utilizados
 
-Siga os passos abaixo para colocar o projeto a funcionar localmente na sua máquina:
+- **Next.js (App Router):** Estrutura moderna de rotas baseada em diretórios (`app/`).
+- **Route Handlers (Rotas de API):** Criação de endpoints de backend (`GET`, `POST`, `PUT`, `DELETE`) em `app/api/habits/route.js`.
+- **Node.js File System (`fs`):** Leitura e escrita síncrona em arquivos locais para persistir dados sem a necessidade de um banco de dados externo.
+- **React Hooks (`useState`, `useEffect`):** Gerenciamento de estado e ciclo de vida no lado do cliente (`'use client'`).
+- **Lucide React:** Biblioteca de ícones minimalistas.
 
-### Pré-requisitos
-Certifique-se de ter o **Node.js** instalado no seu computador[cite: 1].
+---
 
-### Instalação
+## 📂 Estrutura do Projeto
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/daily-tasks.git](https://github.com/seu-usuario/daily-tasks.git)
+```text
+next_project/
+├── app/
+│   ├── api/
+│   │   └── habits/
+│   │       └── route.js     # Endpoints de API (CRUD completo)
+│   ├── globals.css          # Estilos globais (Tailwind)
+│   ├── layout.js            # Layout raiz da aplicação
+│   └── page.js              # Interface de usuário (Front-end)
+├── data/
+│   └── habits.json          # Arquivo JSON para persistência no servidor
+├── public/                  # Arquivos estáticos
+├── package.json
+└── README.md
