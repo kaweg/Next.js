@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Habit Tracker (Next.js App Router)
 
-## Getting Started
+Um aplicativo web **full-stack minimalista** para rastreamento e gerenciamento de metas diárias, desenvolvido com **Next.js**. O projeto explora recursos modernos do framework como Rotas de API, manipulação de arquivos locais e componentes interativos.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📋 Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Cadastro de Hábitos:** Adicione novos hábitos informando o nome e selecionando uma categoria (*Geral, Estudos, Saúde, Trabalho*).
+- **Matriz de Acompanhamento:** Visualize e marque o progresso dos últimos 7 dias em uma interface limpa e responsiva.
+- **Persistência no Servidor:** Os dados são salvos automaticamente em um arquivo JSON local (`data/habits.json`) através de rotas de API nativas.
+- **Painel de Estatísticas:** Acompanhe métricas gerais, como o total de hábitos e o volume de conclusões registradas.
+- **Gerenciamento Completo:** Opção de excluir hábitos individualmente de forma dinâmica.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias e Recursos do Next.js Utilizados
 
-## Learn More
+- **Next.js (App Router):** Estrutura moderna de rotas baseada em diretórios (`app/`).
+- **Route Handlers (Rotas de API):** Criação de endpoints de backend (`GET`, `POST`, `PUT`, `DELETE`) em `app/api/habits/route.js`.
+- **Node.js File System (`fs`):** Leitura e escrita síncrona em arquivos locais para persistir dados sem a necessidade de um banco de dados externo.
+- **React Hooks (`useState`, `useEffect`):** Gerenciamento de estado e ciclo de vida no lado do cliente (`'use client'`).
+- **Lucide React:** Biblioteca de ícones minimalistas.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+next_project/
+├── app/
+│   ├── api/
+│   │   └── habits/
+│   │       └── route.js     # Endpoints de API (CRUD completo)
+│   ├── globals.css          # Estilos globais (Tailwind)
+│   ├── layout.js            # Layout raiz da aplicação
+│   └── page.js              # Interface de usuário (Front-end)
+├── data/
+│   └── habits.json          # Arquivo JSON para persistência no servidor
+├── public/                  # Arquivos estáticos
+├── package.json
+└── README.md
