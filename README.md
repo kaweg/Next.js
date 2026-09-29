@@ -269,15 +269,21 @@ curl -H "x-middleware-subrequest: middleware" http://alvo.com/admin/dashboard
 
 ### Tela Principal — Matriz de Acompanhamento
 
-![Matriz de Acompanhamento — Visualização dos últimos 7 dias com hábitos cadastrados e progresso marcado](./docs/img/tela-matriz.png)
+<img width="1317" height="613" alt="image" src="https://github.com/user-attachments/assets/e2d46602-bcae-4fb8-97b2-d96847c8dfd5" />
+
 
 A tela principal exibe a **matriz de hábitos** com os últimos 7 dias. Cada hábito pode ser marcado individualmente, e o estado é salvo automaticamente no servidor.
 
 ### Tela de Estatísticas
 
-![Painel de Estatísticas — Total de hábitos e total de conclusões registradas](./docs/img/tela-estatisticas.png)
+<img width="1313" height="613" alt="image" src="https://github.com/user-attachments/assets/e8072129-2c6e-42c8-a944-5fe801b3b75a" />
+
 
 O painel de estatísticas apresenta um resumo geral com o **total de hábitos** cadastrados e o **total de conclusões registradas**.
+
+<img width="735" height="206" alt="image" src="https://github.com/user-attachments/assets/b40376e9-010d-44ac-99c1-d63b11bba095" />
+
+Api com o NextResponse.
 
 ---
 
