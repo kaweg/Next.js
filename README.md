@@ -291,7 +291,7 @@ Api com o NextResponse.
 
 🔗 **Repositório:** [https://github.com/kaweg/Next.js](https://github.com/kaweg/Next.js)
 
-🔗 **GitHub Pages:** [https://kaweg.github.io/Next.js](https://kaweg.github.io/Next.js)
+🔗 **Vercel:** next-js-psi.vercel.app
 
 > **Nota:** Como o Next.js é uma aplicação server-side, o GitHub Pages hospeda a versão estática exportada. Para a experiência completa (com API e persistência), rode o projeto localmente.
 
